@@ -1,0 +1,21 @@
+<!--html入口页面：
+这里 script 的 type 必须用 text/babel，是因为只有这样，才不通过 JS 解析器解析。
+等 babel-standalone.js 中的 Babel 会把里面的 JSX 编译成原生 JS 再交给浏览器运行。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="src/components/li.css"/>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="src/components/InputComponent.jsx"></script>
+    <script type="text/babel" src="src/components/SourceComponent.jsx"></script>
+    <script type="text/babel" src="src/components/LiComponent.jsx"></script>
+    <script type="text/babel" src="src/App.jsx"></script>
+    <script type="text/babel" src="src/Index.jsx"></script>
+</body>
+</html>
